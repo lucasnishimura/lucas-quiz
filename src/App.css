@@ -1,0 +1,55 @@
+.main{
+  width: 700px; 
+  margin-left: auto;
+  margin-right: auto; 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* margin-top: 100px; */
+  /* background-color: red; */
+}
+
+.question{
+  margin-top: 30px;
+}
+
+.centralize-questions{
+  width: 200px;
+}
+
+/* .banner{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+} */
+
+.banner{
+  background-image: url("../public/banner.png");
+  background-size: cover;
+  width: auto;
+  width: 700px; 
+  margin-left: auto;
+  margin-right: auto; 
+  height: 250px;
+}
+
+.submit-form{
+  width: 700px; 
+  margin-left: auto;
+  margin-right: auto; 
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nome-completo{
+  width: 450px;
+  margin-top: 30px;
+}
+
+.mt-20{
+  margin-top: 20px;
+  padding-top: 10px;
+}
