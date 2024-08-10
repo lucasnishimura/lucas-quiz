@@ -1,7 +1,6 @@
 .main{
   width: 700px; 
-  margin-left: auto;
-  margin-right: auto; 
+  margin-left: 10%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -24,20 +23,10 @@
   width: 50%;
 } */
 
-.banner{
-  background-image: url("../public/banner.png");
-  background-size: cover;
-  width: auto;
-  width: 700px; 
-  margin-left: auto;
-  margin-right: auto; 
-  height: 250px;
-}
 
 .submit-form{
-  width: 700px; 
-  margin-left: auto;
-  margin-right: auto; 
+  width: 70%; 
+  margin-left: 10%;
   margin-top: 50px;
   display: flex;
   align-items: center;
@@ -45,11 +34,97 @@
 }
 
 .nome-completo{
-  width: 450px;
+  width: 200px;
   margin-top: 30px;
 }
 
 .mt-20{
   margin-top: 20px;
   padding-top: 10px;
+}
+
+.button-tesouro{
+  height: 50px;
+  border: 0px;
+  border-radius: 3px;
+  background-color: rgb(90, 65, 2);
+  color: white;
+  font-weight: bold;
+  width: 200px;
+  margin: 5px;
+}
+
+.password-field{
+  display: flex;
+  justify-content: space-around;
+}
+
+.password-field-icon{
+  display: flex;
+  justify-content: space-around;
+  margin-top: -25px;
+}
+
+.password{
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+  font-size: 20pt;
+  text-align: center;
+}
+.password-icon{
+  margin: 5px;
+  width: 50px;
+  height: 20px;
+  font-size: 15pt;
+  text-align: center;
+  font-weight: bold;
+}
+
+.apg{
+  background-color: tomato !important;
+}
+
+.send{
+  background-color: rgb(0, 56, 0) !important;
+}
+
+@media screen and (max-width: 800px) {
+
+  .main{
+    width: 70%; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 15%;
+    /* margin-top: 100px; */
+    /* background-color: red; */
+  }
+
+  .main-tesouro{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .password{
+    margin: 5px;
+    width: 80%;
+    height: 50px;
+    font-size: 20pt;
+    text-align: center;
+  }
+
+  .password-icon{
+    margin: 5px;
+    width: 80%;
+    height: 20px;
+    font-size: 15pt;
+    text-align: center;
+    font-weight: bold;
+  }
+
 }

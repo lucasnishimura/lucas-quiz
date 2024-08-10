@@ -84,7 +84,7 @@ export default function Home() {
   }
 
   const submitQuiz = (event) => {
-    if(values.name == ''){
+    if(values.name === ''){
       Swal.fire({
         icon: "error",
         title: "Oops...",
@@ -108,7 +108,7 @@ export default function Home() {
       if (result.isConfirmed) {
         submitForm(body).then(response => {
           const finalGrade = response.data.grade;
-          if(finalGrade == 10){
+          if(finalGrade === 10){
             Swal.fire({
               title: "Parabéns!",
               html: `Você acertou tudo! Se essa foi sua primeira tentativa, vá reivindicar seu prêmio! <br><br> Veja a classificação geral <a href="/score" target="_blank">aqui</a>`,
@@ -120,7 +120,7 @@ export default function Home() {
             })
           }
           
-          else if(finalGrade == 9 || finalGrade == 8 || finalGrade == 7){
+          else if(finalGrade === 9 || finalGrade === 8 || finalGrade === 7){
             Swal.fire({
               title: "NA TRAAAAVE!!",
               html: `Você acertou QUASE tudo! Se essa foi sua primeira tentativa, você merece uma lembrancinha pela desempenho <br><br> Veja a classificação geral <a href="/score" target="_blank">aqui</a>`,
@@ -132,7 +132,7 @@ export default function Home() {
             })
           }
           
-          else if(finalGrade == 6 || finalGrade == 5 || finalGrade == 4){
+          else if(finalGrade === 6 || finalGrade === 5 || finalGrade === 4){
             Swal.fire({
               title: "Nada mal!",
               html: `Pelo nível de dificuldade do quiz você mandou muito bem! <br><br> Veja a classificação geral <a href="/score" target="_blank">aqui</a>`,
@@ -144,7 +144,7 @@ export default function Home() {
             })
           }
           
-          else if(finalGrade == 3 || finalGrade == 2 || finalGrade == 1){
+          else if(finalGrade === 3 || finalGrade === 2 || finalGrade === 1){
             Swal.fire({
               title: "Errrrroooou!",
               html: `Realmente tava bem difícil né? Que tal aproveitar a oportunidade para me conhecer um pouco melhor? <br><br> Veja a classificação geral <a href="/score" target="_blank">aqui</a>`,
@@ -164,10 +164,8 @@ export default function Home() {
 
   return (
     <>
-      <div className="banner">
-        {/* <img className="banner" src={banner} /> */}
-      </div>
       <div className="main">
+        <h1>Quiz do Aniversariante</h1>
         <div className="mt-20">
           <TextField
               required

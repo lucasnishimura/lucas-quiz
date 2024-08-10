@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { useState, useEffect, useContext } from 'react';
 import api from './connection';
 import './App.css';
 import Table from '@mui/material/Table';
@@ -43,17 +42,21 @@ export default function Score() {
   //   })
   // }, []);
 
+
   return (
     <>
       <div className="banner">
         {/* <img className="banner" src={banner} /> */}
+      </div>
+      <div className="main mt-20">
+        <a href="/treasure" target="_blank"><button className="button-tesouro" value="Caça ao tesouro">CAÇA AO TESOURO 👀 💰</button></a>
       </div>
       <div className="main">
         <div className="mt-20">
           CLASSIFICAÇÃO GERAL <br/><br/>
 
           <TableContainer component={Paper}>
-            <Table sx={{ minWidth: 650 }} aria-label="simple table">
+            <Table sx={{ minWidth: 300 }} aria-label="simple table">
               <TableHead>
                 <TableRow>
                   <TableCell>Nome</TableCell>
