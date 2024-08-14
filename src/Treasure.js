@@ -38,7 +38,6 @@ export default function Treasure() {
 
 	async function submitForm() {
 		const response = await api.post('/complete');
-		console.log(response)
 		return response
 	}
 
@@ -62,16 +61,18 @@ export default function Treasure() {
 				cleanUp();
 				return false;
 			} else {
-				console.log('oi')
-				submitForm().then(reponse =>{
+				submitForm().then((response) => {
+					let resgatado = response.data.resgatado
 					Swal.fire({
 						icon: "question",
-						title: "Você achou a senha",
+						title: "Você achou a senha!!!",
 						text: "Mas será que foi o primeiro?",
 						confirmButtonText: "Conferir"
 					}).then((result) => {
-						if (result.isConfirmed) {
-							navigate("/");
+						if (result.isConfirmed && resgatado) {
+							navigate("/sucrilhos");
+						}else if(result.isConfirmed && !resgatado){
+							navigate("/beterraba");
 						}
 					})
 				})
