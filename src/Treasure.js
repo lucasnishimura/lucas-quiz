@@ -111,7 +111,7 @@ export default function Treasure() {
 					<input className="password-icon" disabled="true" value="★" />
 					<input className="password-icon" disabled="true" value="⎅" />
 					<input className="password-icon" disabled="true" value="⍡" />
-					<input className="password-icon" disabled="true" value="★" />
+					<input className="password-icon" disabled="true" value="♦︎" />
 				</div><br></br><br /><br />
 				<div className="password-field">
 					<button className="button-tesouro send" onClick={submitAnswer} value="Caça ao tesouro">Abrir Tesouro</button>
